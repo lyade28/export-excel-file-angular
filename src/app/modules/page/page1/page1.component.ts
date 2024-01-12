@@ -16,11 +16,11 @@ ngOnInit(): void {
 }
 
 onExportExcel(){
-const ws = XLSX.utils.json_to_sheet(this.dataExpot);
-const wb = XLSX.utils.book_new();
-XLSX.utils.book_append_sheet(wb , ws, 'placeholder');
+  const ws = XLSX.utils.json_to_sheet(this.dataExpot);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb , ws, 'placeholder');
 
-XLSX.writeFile(wb , 'Liste.xlsx')
+  XLSX.writeFile(wb , 'Liste.xlsx')
 }
 
 }
